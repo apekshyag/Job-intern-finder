@@ -55,7 +55,7 @@ const Navbar = ({ userType, onLogout }) => {
             
             <button
               onClick={onLogout}
-              className="flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-red-600 hover:bg-red-50 transition-colors"
+              className="flex items-center  space-x-1 px-3 py-2 rounded-md text-sm font-medium bg-red-400 text-gray-900 hover:text-gray-900 hover:bg-red-600 transition-colors"
             >
               <LogOut className="h-4 w-4" />
               <span className="hidden sm:block">Logout</span>
