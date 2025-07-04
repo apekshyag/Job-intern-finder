@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Eye, EyeOff, Briefcase, Mail, Lock, User } from 'lucide-react';
 import Button from '../components/Button';
+import toast from 'react-hot-toast';
 
 const SignupPage = ({ onSignup }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,11 +22,11 @@ const SignupPage = ({ onSignup }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match');
+      toast.error('passwords do not match');
       return;
     }
     if (!formData.acceptTerms) {
-      alert('Please accept the terms and conditions');
+      toast.error('Accpet terms and condition!')
       return;
     }
     
