@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import SignupPage from './pages/SignupPage';
 import JobListingsPage from './pages/JobListingsPage';
 import JobDetailPage from './pages/JobDetailPage';
-import UserDashboard from './pages/UserDashboard';
+import UserDashboard from './pages/UserDashboard.jsx';
 import EmployerDashboard from './pages/EmployerDashboard';
 import LoginPage from './pages/LoginPage';
 
