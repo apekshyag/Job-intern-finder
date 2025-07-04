@@ -10,7 +10,7 @@ import LoginPage from './pages/LoginPage';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userType, setUserType] = useState('jobseeker'); // 'jobseeker' or 'employer'
+  const [userType, setUserType] = useState('jobseeker'); 
 
   return (
     <Router>
